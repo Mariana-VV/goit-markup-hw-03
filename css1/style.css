@@ -40,6 +40,9 @@ header {
   background: var(--color-aditional);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.container-header {
+  display: flex;
+}
 .logo {
   text-decoration-line: none;
   color: var(--title-text-color);
@@ -58,12 +61,16 @@ header {
   display: flex;
   align-items: center;
 }
+.site-nav-container {
+  margin-left: 85px;
+}
 .site-nav {
+  padding: 0;
   margin: 0;
   display: flex;
-  margin-left: 86px;
 }
 .site-nav.link {
+  margin-right: 50px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -75,22 +82,25 @@ header {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.site-nav.link:last-child {
+  margin-left: 0;
+}
 .site-nav .item {
-  margin-right: 50px;
 }
 .site-nav.item:last-child {
   margin-right: 0;
 }
 .site-nav.item + .item {
-  margin-left: 0;
+}
+
+.auth-site-container {
+  margin-left: 331px;
+  list-style: none;
 }
 .auth-site {
-  margin: 0;
   display: flex;
-  margin-right: auto;
 }
 .auth-site.item {
-  margin-right: 50px;
 }
 .auth-site.item:last-child {
   margin-right: 0;
@@ -98,6 +108,7 @@ header {
 .auth-site.item + .item {
 }
 .auth-site.link {
+  margin-right: 30px;
   text-decoration-line: none;
   font-style: normal;
   font-weight: 500;
@@ -106,10 +117,7 @@ header {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.auth-site.item {
-  margin-right: 50px;
-}
-.auth-site.item:last-child {
+..auth-site.link:last-child {
   margin-right: 0;
 }
 
@@ -122,8 +130,7 @@ header {
   color: var(--accent-color);
 }
 .hero {
-  display: block;
-  text-align: center;
+  width: 1600px;
 }
 .hero-title {
   font-weight: 900;
@@ -192,8 +199,9 @@ header {
 .team {
   background: #f5f4fa;
 }
-.container {
-  width: 1200;
+.container-hiro {
+  height: 600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
