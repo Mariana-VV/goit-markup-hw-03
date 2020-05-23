@@ -81,6 +81,7 @@ color: #2196F3; */
   margin-left: 331px;
 }
 .auth-site-list {
+  padding: 0;
   display: flex;
 }
 .auth-site.link {
@@ -100,13 +101,17 @@ color: #2196F3; */
   margin-left: 85px;
 }
 .site-nav {
+  margin: 0;
   padding: 0;
-
   display: flex;
 }
-
-.site-nav.link {
+.site-nav.item {
   margin-right: 50px;
+}
+.site-nav.item:last-child {
+  margin-right: 0;
+}
+.site-nav.link {
   text-decoration-line: none;
   color: #212121;
   font-style: normal;
@@ -115,9 +120,7 @@ color: #2196F3; */
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav.link:last-child {
-  margin-right: 0;
-}
+
 .site-nav:hover,
 .site-nav:focus {
   color: var(--accent-color);

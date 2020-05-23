@@ -98,9 +98,11 @@ header {
   list-style: none;
 }
 .auth-site {
+  padding: 0;
   display: flex;
 }
 .auth-site.item {
+  margin-right: 50px;
 }
 .auth-site.item:last-child {
   margin-right: 0;
@@ -117,9 +119,6 @@ header {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-..auth-site.link:last-child {
-  margin-right: 0;
-}
 
 .site-nav:hover,
 .site-nav:focus {
@@ -133,6 +132,8 @@ header {
   width: 1600px;
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -295,6 +296,7 @@ footer {
   text-decoration-line: none;
 }
 .buttom {
+  margin: 0 auto;
   text-decoration-line: none;
   color: var(--color-aditional);
   background-color: var(--accent-color);
