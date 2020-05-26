@@ -42,6 +42,11 @@ header {
 }
 .container-header {
   display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .logo {
   text-decoration-line: none;
@@ -57,6 +62,14 @@ header {
 .logo:focus {
   color: var(--accent-color);
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid var(--accent-color);
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -70,8 +83,6 @@ header {
   display: flex;
 }
 .site-nav.link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration-line: none;
   font-style: normal;
   font-weight: 500;
@@ -81,10 +92,10 @@ header {
   color: var(--title-text-color);
 }
 
-.site-nav.item {
+.site-nav li {
   margin-right: 50px;
 }
-.site-nav.item:last-child {
+.site-nav li:last-child {
   margin-right: 0;
 }
 
@@ -97,10 +108,10 @@ header {
   padding: 0;
   display: flex;
 }
-.auth-site.item {
+.auth-site li {
   margin-right: 30px;
 }
-.auth-site.item:last-child {
+.auth-site li:last-child {
   margin-right: 0;
 }
 
@@ -123,10 +134,20 @@ header {
   color: var(--accent-color);
 }
 .hero {
+  text-align: center;
   width: 1600px;
 }
+.container-hiro {
+  background-image: url(../image/hiropic.jpg);
+  height: 600px;
+  max-width: 1600px;
+  outline: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-title {
-  padding-top: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
@@ -137,20 +158,30 @@ header {
   text-transform: uppercase;
   color: var(--color-aditional);
   margin-bottom: 46px;
+  padding-top: 200px;
 }
-.attention li {
+/*  */
+/* Внимание к деталям */
+/*  */
+.attention-list li {
   width: 270px;
   margin-right: 30px;
 }
-.attention li:last-child {
+.attention-list li:last-child {
   margin-right: 0;
 }
-.attention-section {
-}
+
 .attention-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .attention-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -158,13 +189,18 @@ header {
   text-transform: uppercase;
 }
 .attention-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-weight: 400px;
 }
-.activity {
+/*  */
+/*  Секция чем мы занимаемся*/
+/*  */
+.activity-section {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -173,10 +209,23 @@ header {
   text-transform: uppercase;
   color: var(--color-aditional);
 }
+.container.activity {
+}
 .activity-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
 }
+.activity-list li {
+  margin-right: 30px;
+}
+.activity-list li:last-child {
+  margin-right: 0;
+}
 .activity-title {
+  padding-top: 188px;
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -186,32 +235,29 @@ header {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-.activity-list li:not(:last-child) {
-  width: 370px;
-  margin-right: 30px;
-}
-.activity-container {
-}
+/*  */
+/* Наша команда */
+/*  */
 .team {
   background: #f5f4fa;
 }
-.container-hiro {
-  margin: 0 auto;
-  height: 600px;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 .team-list {
   display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 94px;
 }
 .team-list li {
+  width: 270px;
   margin-right: 30px;
 }
 .team-list li:last-child {
   margin-right: 0;
 }
 .team-title {
+  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -224,6 +270,7 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  text-align: center;
 }
 .team-job {
   font-size: 16px;
@@ -232,6 +279,9 @@ header {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+/*  */
+/*  Постоянные клиенты*/
+/*  */
 .customers {
   font-weight: 700;
   font-size: 36px;
@@ -246,9 +296,15 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 94px;
 }
 .customers-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
+  padding-bottom: 94px;
 }
 .customers-list li {
   margin-right: 30px;
@@ -292,20 +348,22 @@ footer {
   text-decoration-line: none;
 }
 .buttom {
-  margin: 0 auto;
+  min-width: 136px;
   text-decoration-line: none;
   color: var(--color-aditional);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: inline-block;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  display: inline-block;
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  border: 1px transparent;
+  margin-bottom: 200px;
 }
 .buttom:hover,
 .buttom:focus {
@@ -323,8 +381,12 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-buttom .none-line {
-  text-decoration-line: none;
+
+/*  */
+/*  Футтер*/
+/*  */
+.container-footer {
+  display: flex;
 }
 .footer-kont {
   text-decoration-line: none;

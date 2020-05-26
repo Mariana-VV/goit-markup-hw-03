@@ -55,6 +55,8 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-nav {
   display: flex;
@@ -84,10 +86,10 @@ color: #2196F3; */
   padding: 0;
   display: flex;
 }
-.auth-site-list.item {
+.auth-site-list li {
   margin-right: 30px;
 }
-.auth-site-list.item:last-child {
+.auth-site-list li:last-child {
   margin-right: 0;
 }
 .auth-site.link {
@@ -99,7 +101,14 @@ color: #2196F3; */
   letter-spacing: 0.02em;
   color: #757575;
 }
+.auth-site-list li:hover,
+.auth-site-list li:focus {
+  color: var(--accent-color);
+}
 
+/*  */
+/* Site-nav */
+/*  */
 .site-nav-container {
   margin-left: 85px;
 }
@@ -108,10 +117,10 @@ color: #2196F3; */
   padding: 0;
   display: flex;
 }
-.site-nav.item {
+.site-nav li {
   margin-right: 50px;
 }
-.site-nav.item:last-child {
+.site-nav li:last-child {
   margin-right: 0px;
 }
 .site-nav.link {
@@ -129,18 +138,23 @@ color: #2196F3; */
   color: var(--accent-color);
 }
 
-.auth-site-link:hover,
-.auth-site-link:focus {
-  color: var(--accent-color);
-}
+/*  */
+/*.main-list  */
+/*  */
 .main-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 .main-list-item {
-  margin-top: 30px;
+  margin-bottom: 30px;
   width: 370px;
-  margin-right: 10px;
+  margin-right: 30px;
+}
+.main-list-item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 .main-list-item :nth-child(-n + 3) {
   margin-top: 0;
@@ -187,20 +201,12 @@ footer {
   color: #ffffff;
 }
 
-.jon-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 .bottom-ul {
   display: flex;
   justify-content: center;
+  padding-left: 0;
 }
-.buttom-ul.item + .item {
+.buttom-ul.item:not(last-child) {
   margin-right: 8px;
 }
 .buttom-portfolio {
@@ -248,6 +254,18 @@ footer {
   color: rgba(255, 255, 255, 0.4);
   align-self: flex-end;
 }
-.footer-cont {
+.container-footer {
   display: flex;
+}
+.jon {
+  margin-left: 69px;
+}
+.jon-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
