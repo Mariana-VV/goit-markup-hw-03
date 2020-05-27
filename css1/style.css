@@ -139,6 +139,9 @@ header {
 }
 .container-hiro {
   background-image: url(../image/hiropic.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 600px;
   max-width: 1600px;
   outline: 1px solid black;
@@ -196,6 +199,27 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-weight: 400px;
+}
+.attention-item::before {
+  content: "";
+  outline: 1px solid grey;
+  display: block;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+}
+.antena::before {
+  background-image: url(../img2/vector1.png);
+}
+.watch::before {
+  background-image: url(../img2/vector2.png);
+}
+.lap-top::before {
+  background-image: url(../img2/vector3.png);
+}
+.men::before {
+  background-image: url(../img2/vector4.png);
 }
 /*  */
 /*  Секция чем мы занимаемся*/
@@ -278,6 +302,28 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.social-links {
+  display: flex;
+}
+.team-link::after {
+  content: "";
+
+  display: inline-block;
+  height: 30px;
+  width: 20px;
+}
+.insta {
+  background-image: url(../img2/insta.png);
+}
+.twit {
+  background-image: url(../img2/twit.png);
+}
+.face {
+  background-image: url(../img2/face.png);
+}
+.linkedin {
+  background-image: url(../img2/link.png);
 }
 /*  */
 /*  Постоянные клиенты*/
@@ -395,6 +441,9 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/*  */
+/*Присоеденяйтесь  */
+/*  */
 .jon {
   font-weight: 700;
   font-size: 14px;
@@ -402,6 +451,22 @@ footer {
   letter-spacing: 0.03em;
   text-transform: u ppercase;
   color: #ffffff;
+}
+.social-links {
+  display: flex;
+}
+.social-links li {
+  margin-right: 10px;
+}
+.social-link {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: grey;
+  background-position: center;
+  border-radius: 50%;
 }
 .logo-footer {
   font-family: Raleway;
